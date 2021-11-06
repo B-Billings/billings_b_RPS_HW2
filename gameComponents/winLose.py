@@ -1,15 +1,15 @@
-def winorLose(status):
-    print("You " + status + "! Would you like to play again?")
-    choice = input(" Y / N?")
+from gameComponents import gameVars
 
-    global playerLives
-    global computerLives
-    global player
+
+def winorlose(status):
+    print("you " + status)
+
+    choice = input("do you want to play again? y/n: ")
 
     if choice == "n":
-        print("better luck next time!")
+        print("Better luck next time!")
         exit()
-    else:
-        playerLives = 5
-        computerLives = 5
-        player = False
+    elif choice == "y":
+        gameVars.playerLives = 5
+        gameVars.computerLives = 5
+        gameVars.player = False
