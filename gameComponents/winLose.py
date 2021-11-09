@@ -4,7 +4,7 @@ from gameComponents import gameVars
 def winorlose(status):
     print("you " + status)
 
-    choice = input("do you want to play again? y/n: ")
+    choice = input("Would you like to play again? y/n: ")
 
     if choice == "n":
         print("Peace it was fun while it lasted")
