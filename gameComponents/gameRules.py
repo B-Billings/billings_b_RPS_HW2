@@ -1,6 +1,6 @@
 from gameComponents import gameVars, winLose
 
-def gameRules(status):
+def gameRules():
     if gameVars.player == gameVars.computer:
         print("tie! try again")
         
