@@ -11,7 +11,7 @@ while gameVars.player is False:
     if gameVars.player == gameVars.computer:
         gameRules.gameRules("tie")
     
-    if gameVars.player == "rock":
+    elif gameVars.player == "rock":
         gameRules.gameRules("rock")
     
     elif gameVars.player == "paper":
