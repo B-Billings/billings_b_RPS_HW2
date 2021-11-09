@@ -1,6 +1,7 @@
 from random import randint
 from gameComponents import gameRules, winLose, gameVars
 
+print("=======Welcome to the Rock Paper Scissors Python Game=======")
 while gameVars.player is False:
     gameVars.player = input("Choose your weapon: rock, paper or scissors: ")
     gameVars.computer = gameVars.choices[randint(0, 2)]
