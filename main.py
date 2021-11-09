@@ -9,17 +9,7 @@ while gameVars.player is False:
     print("player chose: " + gameVars.player)
     print("computer chose: " + gameVars.computer)
     
-    if gameVars.player == gameVars.computer:
-        gameRules.gameRules("tie")
-    
-    elif gameVars.player == "rock":
-        gameRules.gameRules("rock")
-    
-    elif gameVars.player == "paper":
-        gameRules.gameRules("paper")
-    
-    elif gameVars.player == ("scissors"):
-        gameRules.gameRules("scissors")
+    gameRules.gameRules()
     
     print("player life count: " + str(gameVars.playerLives))
     print("computer life count: " + str(gameVars.computerLives))
