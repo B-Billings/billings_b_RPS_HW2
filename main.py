@@ -1,40 +1,25 @@
 from random import randint
-from gameComponents import winLose, gameVars
+from gameComponents import gameRules, winLose, gameVars
 
 while gameVars.player is False:
     gameVars.player = input("Choose your weapon: rock, paper or scissors: ")
     gameVars.computer = gameVars.choices[randint(0, 2)]
-
+    
     print("player chose: " + gameVars.player)
     print("computer chose: " + gameVars.computer)
-
-    if gameVars.computer == gameVars.player:
-        print("tie! try again")
-
-    elif gameVars.player == "rock":
-        if gameVars.computer == "paper":
-            print("you lose!")
-            gameVars.playerLives = gameVars.playerLives - 1
-        else:
-            print("you win!")
-            gameVars.computerLives = gameVars.computerLives - 1
-
+    
+    if gameVars.player == gameVars.computer:
+        gameRules.gameRules("tie")
+    
+    if gameVars.player == "rock":
+        gameRules.gameRules("rock")
+    
     elif gameVars.player == "paper":
-        if gameVars.computer == "scissors":
-            print("you lose!")
-            gameVars.playerLives = gameVars.playerLives - 1
-        else:
-            print("you win!")
-            gameVars.computerLives = gameVars.computerLives - 1
-
-    elif gameVars.player == "scissors":
-        if gameVars.computer == "rock":
-            print("you lose!")
-            gameVars.playerLives = gameVars.playerLives - 1
-        else:
-            print("you win!")
-            gameVars.computerLives = gameVars.computerLives - 1
-
+        gameRules.gameRules("paper")
+    
+    elif gameVars.player == ("scissors"):
+        gameRules.gameRules("scissors")
+    
     print("player life count: " + str(gameVars.playerLives))
     print("computer life count: " + str(gameVars.computerLives))
 
