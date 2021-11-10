@@ -4,8 +4,7 @@ Pick your weapon and play against the computer - you'll only get a virtual sting
 
 ### Prerequisites
 
-All you need is Python 3 to play.
-https://www.python.org/
+All you need is [Python 3](https://www.python.org/) to play.
 
 ### Usage
 Clone the project, <code>cd</code> to your directory/download, and run the game.py file in a Python 3 shell (Terminal on a mac / Linux, Windows command prompt).
@@ -13,17 +12,16 @@ Clone the project, <code>cd</code> to your directory/download, and run the game.
 ### Rules
 Same as the classic game:
 
-Paper covers Rock 
-Scissors cuts Paper  
-Rock smashes Scissors
+* Paper covers Rock 
+* Scissors cuts Paper  
+* Rock smashes Scissors
 
 Choose your weapon wisely!
 
-Built with Python 3
+Built with [Python 3](https://www.python.org/doc/)
 
 Enjoy!
 
 ### License 
 MIT
 
-https://www.python.org/doc/
