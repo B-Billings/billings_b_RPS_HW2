@@ -5,7 +5,8 @@ print("\033[31m"+"======= Welcome to the Rock Paper Scissors Python Game =======
 print("\033[32m"+"==============================================================")
 print("\033[39m") #makes colour of text white again
 while gameVars.player is False:
-    gameVars.player = input("Choose your weapon: rock, paper or scissors: ")
+    print("\033[39m")
+    gameVars.player = input("Choose your weapon: rock, paper or scissors:")
     gameVars.computer = gameVars.choices[randint(0, 2)]
     
     print("player chose: " + gameVars.player)
