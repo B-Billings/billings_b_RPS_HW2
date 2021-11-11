@@ -2,7 +2,7 @@ from gameComponents import gameVars, winLose
 
 def gameRules():
     if gameVars.player == gameVars.computer:
-        print("\033[34m"+ "tie! try again" "\033[39m")
+        print("\033[34m"+ "tie! try again!" "\033[39m")
         
     elif gameVars.player == "rock":
             if gameVars.computer == "paper":
@@ -27,3 +27,6 @@ def gameRules():
             else:
                 print("\033[32m"+"you win!""\033[39m")
                 gameVars.computerLives = gameVars.computerLives - 1
+    
+    elif gameVars.player != ("rock, paper, scissors"):
+        print("\033[31m"+"Please check your spelling and try again!""\033[39m")
