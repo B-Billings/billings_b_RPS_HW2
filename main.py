@@ -10,12 +10,15 @@ while gameVars.player is False:
     gameVars.computer = gameVars.choices[randint(0, 2)]
     
     print("player chose: " + gameVars.player)
+
     print("computer chose: " + gameVars.computer)
     
     gameRules.gameRules()
-    
+
     print("player life count: " + str(gameVars.playerLives))
     print("computer life count: " + str(gameVars.computerLives))
+
+    print("==============================================================")
 
     if gameVars.playerLives == 0:
         winLose.winorlose("lost")
