@@ -11,7 +11,7 @@ def winorlose(status):
         exit()
     elif choice == "y":
 
-        print("Thanks for choosing to playing again!")
+        print("Thanks for choosing to play again!")
        
         gameVars.playerLives = 5
         gameVars.computerLives = 5
