@@ -12,7 +12,9 @@ while gameVars.player is False:
     print("\033[39m")
     gameVars.player = input("Choose your weapon: rock, paper or scissors:")
     gameVars.computer = gameVars.choices[randint(0, 2)]
-    
+   
+    print("==============================================================")
+
     print("\033[36m"+"player chose: " + gameVars.player)
     print("\033[35m"+"computer chose: " + gameVars.computer)
     
@@ -20,6 +22,8 @@ while gameVars.player is False:
     
     print("player life count: " + str(gameVars.playerLives))
     print("computer life count: " + str(gameVars.computerLives))
+
+    print("==============================================================")
 
     if gameVars.playerLives == 0:
         winLose.winorlose("lost")
